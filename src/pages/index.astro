@@ -37,16 +37,23 @@ const meta = {
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
-
   <Note />
 
-  <!-- Features2 Widget ************** -->
+  <LatestPosts
+    title="Was ich bisher erschaffen habe"
+    information="Jedes dieser Projekte hat mich Stück für Stück zu einem besseren und organisierteren Entwickler gemacht"
+    postIds={[
+      'get-started-website-with-astro-tailwind-css.md',
+      'how-to-customize-astrowind-to-your-brand.md',
+      'useful-resources-to-create-websites.md',
+      'astrowind-template-in-depth.md',
+    ]}
+  />
 
   <Features2
-    title="Was ich bisher erschaffen habe"
-    subtitle="Jedes dieser Projekte hat mich einen besseren Entwickler gemacht"
-    highlight="Projekte"
+    title="Was ich dabei lernen konnte"
+    subtitle="Auf dem Weg durfte ich viele Technologien und Techniken kennenlernen"
+    highlight="Skills"
     items={[
       {
         title: 'Headers',
@@ -105,19 +112,6 @@ const meta = {
     ]}
   />
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <LatestPosts
-    title="Was ich bisher erschaffen habe"
-    information="Jedes dieser Projekte hat mich Stück für Stück zu einem besseren und organisierteren Entwickler gemacht"
-    postIds={[
-      'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
-      'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
-    ]}
-  />
-
   <!-- FAQs Widget ******************* -->
 
   <FAQs
@@ -161,34 +155,4 @@ const meta = {
       ],
     ]}
   />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
-    }}
-  >
-    <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
 </Layout>
