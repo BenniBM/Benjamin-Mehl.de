@@ -1,7 +1,7 @@
 ---
 publishDate: 2022-05-12T00:00:00Z
 title: Splash Bingo - Eine App für Turm und Freestyle Springer
-description: Lorem ipsum dolor sit amet
+description: Eine App für Turm und Freestyle Springer
 excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
 image: ~/assets/images/do-more.jpg
 category: Apps
