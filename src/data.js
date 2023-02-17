@@ -20,7 +20,7 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: 'E-mail', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: 'Kontaktier mich', href: 'https://github.com/onwidget/astrowind' }
   ],
 };
 
