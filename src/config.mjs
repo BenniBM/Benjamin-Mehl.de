@@ -7,9 +7,9 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Benjamin Mehl',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    '🚀 Hallo Ich bin Benjamin Mehl. Ihr neuer Praktikant',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
@@ -28,7 +28,7 @@ const CONFIG = {
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
   blog: {
-    disabled: false,
+    disabled: true,
     postsPerPage: 4,
 
     post: {
