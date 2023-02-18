@@ -1,23 +1,20 @@
 ---
-import { Icon } from 'astro-icon';
-
-interface Item {
-  question: string;
-  answer: string;
-}
+import { Picture } from '@astrojs/image/components';
 
 export interface Props {
   title?: string;
   subtitle?: string;
   highlight?: string;
-  items: Array<Array<Item>>;
+  article: string;
+  image?: string | any;
 }
 
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   highlight,
-  items = [],
+  article = '',
+  image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
 
@@ -44,23 +41,21 @@ const {
     }
   </div>
   <div class="max-w-7xl sm:mx-auto">
-    <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 md:grid-cols-2">
-      {
-        items &&
-          items.map((subitems) => (
-            <div class="space-y-8">
-              {subitems.map(({ question, answer }) => (
-                <div>
-                  <h3 class="mb-4 text-xl font-bold">
-                    <Icon name="tabler:arrow-down-right" class="w-7 h-7 text-primary inline-block" />
-                    {question}
-                  </h3>
-                  {answer && <div class="text-muted dark:text-gray-400" set:html={answer} />}
-                </div>
-              ))}
-            </div>
-          ))
-      }
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="text-muted dark:text-gray-400 flex-1">
+        {article}
+      </div>
+      <Picture
+        class="mx-auto rounded-md w-full flex-1"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        aspectRatio={1024 / 576}
+        loading="eager"
+        width={1024}
+        height={576}
+        {...image}
+      />
     </div>
+    <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 md:grid-cols-2"></div>
   </div>
 </div>
