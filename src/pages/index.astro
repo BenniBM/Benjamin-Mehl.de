@@ -19,7 +19,7 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Kontaktiere mich', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:mail' }}
+    callToAction={{ text: 'Kontaktiere mich', href: 'mailto:benjamin.mehlbm@gmail.com', icon: 'tabler:mail' }}
     callToAction2={{ text: 'mehr über mich', href: '#about-me' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
@@ -40,12 +40,7 @@ const meta = {
   <LatestPosts
     title="Was ich bisher erschaffen habe"
     information="Jedes dieser Projekte hat mich Stück für Stück zu einem besseren und organisierteren Entwickler gemacht und mir neue Fähigkeiten beigebracht."
-    postIds={[
-      'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
-      'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
-    ]}
+    postIds={['sveltekit-blog']}
   />
 
   <Features2
@@ -56,55 +51,54 @@ const meta = {
       {
         title: 'Sveltekit',
         description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
+          'Sveltekit ist ein Webapp-Framework, welches auf Svelte basiert und performante SSR Apps ermöglicht.',
         icon: 'vscode-icons:file-type-svelte',
       },
       {
         title: 'Next.js',
         description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
+          'Next.js ist ein React-Framework, das die Entwicklung von Server-seitig gerenderten Webanwendungen vereinfacht.',
         icon: 'vscode-icons:file-type-reactjs',
       },
       {
         title: 'Astro',
         description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
+          'Astro ist ein Web-Framework welches Webseiten mit Kombination aus statischem und dynamischem Rendering ermöglicht.',
         icon: 'vscode-icons:file-type-astro',
       },
       {
         title: 'Spring Boot',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Spring Boot ist ein Open-Source-Framework für die schnelle Entwicklung von Webanwendungen auf Basis von Java.',
         icon: 'logos:spring-icon',
       },
       {
         title: 'Flutter',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Flutter ist ein Framework für die plattformübergreifende mobile App-Entwicklung, das auf Dart basiert.',
         icon: 'vscode-icons:file-type-flutter',
       },
       {
         title: 'PHP',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        description: 'PHP ist eine serverseitige Skriptsprache, die speziell für die Webentwicklung entwickelt wurde.',
         icon: 'logos:php',
       },
       {
         title: 'Docker & Docker Compose',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Docker ist eine Container-Plattform für die Entwicklung, Bereitstellung und Ausführung von Anwendungen.',
         icon: 'logos:docker-icon',
       },
       {
         title: 'Linux',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Linux ist ein quelloperatives Betriebssystem, das auf Unix aufbaut und häufig in Server-Systemen eingesetzt wird.',
         icon: 'logos:linux-tux',
       },
       {
         title: 'Vim',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+          'Durch Vim motions konnte ich meinen Workflow deutlich verbessern und bin nun schneller und effizienter.',
         icon: 'logos:vim',
       },
     ]}
@@ -114,9 +108,9 @@ const meta = {
 
   <AboutMe
     title="Wer ist Benjamin Mehl?"
-    subtitle="Um mich als Person besser kennenzulernen, habe ich einen kleinen Artikel geschrieben"
+    subtitle="Um mich als Person besser kennenzulernen, habe ich einen kleinen Artikel über mich geschrieben"
     highlight="Über mich"
-    article="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    article="Schon seitdem ich klein bin, hatte ich die Motivation, etwas Neues zu erschaffen. Zuerst fing dies an mit Video- und Fotobearbeitung. Jedoch war ich immer neidisch über die Möglichkeiten, die man hatte beim Entwickeln von digitalen Apps. Dadurch versuchte ich mich am Entwickeln von Webseiten und mobilen Apps, wobei ich viel Freude empfund. In meiner Freizeit gehe ich am liebsten Klippen springen oder bastel an kleinen Programmierprojekten."
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   />
 </Layout>

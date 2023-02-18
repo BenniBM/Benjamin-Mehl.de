@@ -21,7 +21,7 @@ export const headerData = {
     },
   ],
   actions: [
-    { type: 'button', text: 'Kontaktier mich', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: 'Kontaktier mich', href: 'mailto:benjamin.mehlbm@gmail.com' }
   ],
 };
 
@@ -30,21 +30,22 @@ export const footerData = {
     {
       title: 'Socials',
       links: [
-        { text: 'Instagram', href: '#' },
-        { text: 'Youtube', href: '#' },
-        { text: 'LinkedIn', href: '#' },
+        { text: 'Instagram', href: 'https://www.instagram.com/benjamin.mehl/' },
+        { text: 'Youtube', href: 'https://www.youtube.com/@benjaminmehl8951' },
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/in/benjamin-mehl-089a2b227/' },
       ],
     },
     {
       title: 'Kontakt',
       links: [
-        { text: 'E-mail', href: '#' },
+        { text: 'E-mail', href: 'mailto:benjamin.mehlbm@gmail.com' },
+        { text: 'Impressum', href: '/terms' },
       ],
     },
     {
       title: 'Developement',
       links: [
-        { text: 'Github', href: '#' },
+        { text: 'Github', href: 'https://github.com/bennibm' },
       ],
     },
   ],
@@ -52,9 +53,9 @@ export const footerData = {
     { text: 'Impressum', href: getPermalink('/terms') },
   ],
   socialLinks: [
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Twitter', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@benjaminmehl8951' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/benjamin.mehl/' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/bennibm' },
   ],
   footNote: `
     All rights reserved.
