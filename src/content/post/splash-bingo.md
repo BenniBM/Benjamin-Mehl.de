@@ -2,15 +2,17 @@
 publishDate: 2022-05-12T00:00:00Z
 title: Splash Bingo - Eine App für Turm und Freestyle Springer
 description: Eine App für Turm und Freestyle Springer
-excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur.
+excerpt: Ein kleines Nebenprojekt um Flutter und Dart zu lernen.
 image: ~/assets/images/do-more.jpg
-category: Apps
+category: Mobile App
 tags:
   - flutter
+  - dart
+  - figma
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Was ist Splash Bingo?
 
-## Nostra torquent consequat volutpat aliquet neque
+Splash Bingo ist ein Spiel, indem man gegeneinander antreten kann, um zu sehen, wer die meisten vorgegeben Sprünge springen kann. Dabei wird der Sprung durch 4 Parameter bestimmt (Höhe, Schrauben, Saltos, Spezial). Durch das Aufdecken der Felder wird der Parameter (z. B. Höhe) definiert. Um mehr Punkte zu bekommen, deckt man mehr dieser Felder auf. Dadurch wird der Sprung jedoch anspruchsvoller. Die Punkte bekommt man erst, wenn man den Sprung erfolgreich springt.
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit proin, aenean litora volutpat urna egestas magnis arcu non, cras ut cursus et sed morbi lectus. Integer faucibus sagittis eu nunc urna aliquet a laoreet torquent, suspendisse penatibus nulla sollicitudin congue rutrum dictum. Ornare mi habitasse fermentum phasellus dui et morbi litora sodales dictum id erat, nibh purus class ligula aenean lectus venenatis euismod cras torquent ac. Senectus sagittis conubia hendrerit at egestas porta venenatis nisi metus gravida tempor, aenean facilisis nisl ante facilisi lacus integer hac iaculis purus. Scelerisque libero torquent egestas curae tellus viverra inceptos imperdiet urna, porta suspendisse interdum primis odio morbi tempor commodo dictumst, suscipit ornare habitasse semper feugiat cras quisque lobortis.
+<!-- ## Design in Figma pipapo -->
