@@ -5,7 +5,8 @@ export interface Props {
   title?: string;
   subtitle?: string;
   highlight?: string;
-  article: string;
+  article1: string;
+  article2: string;
   image?: string | any;
 }
 
@@ -13,7 +14,8 @@ const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   highlight,
-  article = '',
+  article1 = '',
+  article2 = '',
   image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
@@ -40,19 +42,24 @@ const {
       )
     }
   </div>
-  <div class="max-w-7xl sm:mx-auto">
+  <div class="max-w-3xl sm:mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div class="text-muted dark:text-gray-400 flex-1">
-        {article}
+      <div class="flex flex-col justify-evenly text-muted dark:text-gray-400 flex-1">
+        <p>
+          {article1}
+        </p>
+        <p>
+          {article2}
+        </p>
       </div>
       <Picture
-        class="mx-auto rounded-md w-full flex-1"
-        widths={[400, 768, 1024, 2040]}
-        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-        aspectRatio={1024 / 576}
+        class="mx-auto object-cover object-right-top rounded-md w-full flex-1"
+        widths={[100, 200, 340, 400]}
+        sizes="(max-width: 400px) 400px, (max-width: 200px) 200px, (max-width: 340px) 720px, 2040px"
+        aspectRatio={340 / 500}
         loading="eager"
-        width={1024}
-        height={576}
+        width={340}
+        height={500}
         {...image}
       />
     </div>
