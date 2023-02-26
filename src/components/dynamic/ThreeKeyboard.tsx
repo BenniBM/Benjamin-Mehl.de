@@ -4,7 +4,7 @@ import Keyboard from './Keyboard';
 
 export default function ThreeKeyboard() {
   return (
-    <Canvas style={{ height: '50vh' }} camera={{ position: [0, 0, 3] }}>
+    <Canvas style={{ height: '36vw' }} camera={{ position: [0, 0, 3.4] }}>
       <ambientLight intensity={0.3} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
