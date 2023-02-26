@@ -7,6 +7,7 @@ import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
 import AboutMe from '~/components/widgets/AboutMe.astro';
+import ThreeTest from '~/components/dynamic/ThreeTest';
 
 const meta = {
   title: SITE.title,
@@ -36,6 +37,9 @@ const meta = {
   </Hero>
 
   <Note />
+
+  <!-- <Counter client:load /> -->
+  <ThreeTest client:load />
 
   <LatestPosts
     title="Was ich bisher erschaffen habe"
