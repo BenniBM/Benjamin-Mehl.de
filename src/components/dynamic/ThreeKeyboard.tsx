@@ -3,7 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import Keyboard from './Keyboard';
 
-export default function ThreeTest() {
+export default function ThreeKeyboard() {
   return (
     <Canvas style={{ height: '50vh' }} camera={{ position: [2, 3, 5] }}>
       <ambientLight intensity={0.5} />

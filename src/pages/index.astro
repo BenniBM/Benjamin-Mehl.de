@@ -7,7 +7,6 @@ import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
 import AboutMe from '~/components/widgets/AboutMe.astro';
-import ThreeTest from '~/components/dynamic/ThreeTest';
 
 const meta = {
   title: SITE.title,
@@ -22,7 +21,6 @@ const meta = {
   <Hero
     callToAction={{ text: 'Kontaktiere mich', href: 'mailto:benjamin.mehlbm@gmail.com', icon: 'tabler:mail' }}
     callToAction2={{ text: 'mehr über mich', href: '#about-me' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       Hallo, Ich bin <span class="bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Benjamin Mehl</span>
@@ -37,9 +35,6 @@ const meta = {
   </Hero>
 
   <Note />
-
-  <!-- <Counter client:load /> -->
-  <ThreeTest client:load />
 
   <LatestPosts
     title="Was ich bisher erschaffen habe"
