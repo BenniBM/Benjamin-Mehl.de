@@ -2,7 +2,7 @@
 publishDate: 2023-01-17T00:00:00Z
 title: Wishduell - Eine Mehrspieler Quiz App
 excerpt: Dieses Projekt erstellte ich im Rahmen meines Studiums. Es ist eine Mehrspieler Quiz App, die mit Socket.io realisiert wurde.
-image: ~/assets/images/colors.jpg
+image: ~/assets/images/wishduell.png
 category: Web App
 tags:
   - Fullstack
