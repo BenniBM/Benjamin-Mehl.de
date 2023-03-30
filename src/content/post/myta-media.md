@@ -2,7 +2,7 @@
 publishDate: 2022-04-17T00:00:00Z
 title: Myta Media - Digital Agentur
 excerpt: Digital Agentur für Branding, Websites und Digital Solutions
-image: ~/assets/images/stickers.jpg
+image: ~/assets/images/mytamedia.png
 category: Service
 tags:
   - Webdesign

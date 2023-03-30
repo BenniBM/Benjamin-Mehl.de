@@ -3,7 +3,7 @@ publishDate: 2022-05-12T00:00:00Z
 title: Splash Bingo - Eine App für Turm und Freestyle Springer
 description: Eine App für Turm und Freestyle Springer
 excerpt: Ein kleines Nebenprojekt um Flutter und Dart zu lernen.
-image: ~/assets/images/do-more.jpg
+image: ~/assets/images/splashbingo.png
 category: Mobile App
 tags:
   - flutter
