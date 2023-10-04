@@ -5,7 +5,7 @@ import { useFrame } from '@react-three/fiber';
 export default function Model(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF(
-    'https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/mechanical-keyboard-tenkeyless/model.gltf'
+    'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/mechanical-keyboard-tenkeyless/model.gltf'
   );
 
   const groupRef = useRef();
