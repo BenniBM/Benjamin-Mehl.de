@@ -5,4 +5,5 @@
 - Astro.js
 - TypeScript
 - Tailwind CSS
+- MDX
 - Three.js
