@@ -1,116 +1,151 @@
 ---
-import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
-import AboutMe from '~/components/widgets/AboutMe.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
-const meta = {
-  title: SITE.title,
-  description: SITE.description,
-  dontUseTitleTemplate: true,
+const metadata = {
+  title: 'Benjamin Mehl',
+  ignoreTitleTemplate: true,
 };
 ---
 
-<Layout {meta}>
+<Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Kontaktiere mich', href: 'mailto:benjamin.mehlbm@gmail.com', icon: 'tabler:mail' }}
-    callToAction2={{ text: 'mehr über mich', href: '#about-me' }}
-  >
-    <Fragment slot="title">
-      Hallo, Ich bin <span class="bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Benjamin Mehl</span>
-      <br /> Ihr neuer Praktikant
-    </Fragment>
+    actions={[
+      {
+        variant: 'primary',
+        icon: 'tabler:mail',
+        text: 'Contact me',
+        href: 'mailto:benni.mehlbm@gmail.com',
+        target: '_blank',
+      },
+      { text: 'About me', href: '#features' },
+    ]}>
+    <Fragment slot="title"> Hey, I'm Benjamin Mehl</Fragment>
 
     <Fragment slot="subtitle">
-      Ich studiere gerade Medieninformatik an der Hochschule der Medien in Stuttgart. Ich liebe es, kreativ zu sein und
-      neue Lösungen zu entwickeln. In meinem Studium habe ich mich auf die Entwicklung von Web- und mobilen Anwendungen
-      sowie anspruchsvollen Softwareprojekten spezialisiert.
+      I am currently studying Computer Science and Media at the Hochschule der Medien in Stuttgart. I love being
+      creative and developing new software solutions. In my studies, I have specialized in the development of web and
+      mobile applications as well as complex software projects.
     </Fragment>
   </Hero>
 
+  <!-- Note Widget ******************* -->
+
   <Note />
 
-  <LatestPosts
-    title="Was ich bisher erschaffen habe"
-    information="Jedes dieser Projekte hat mich Stück für Stück zu einem besseren und organisierteren Entwickler gemacht und mir neue Fähigkeiten beigebracht."
-    postIds={['sveltekit-blog']}
+  <BlogLatestPosts
+    id="projects"
+    title={`What I have created <br> so far`}
+    information={'Each project has leveled up my skills, making me a more organized and creative developer. Every challenge taught me something new. Whether it was problem-solving, better code structure, or just a cool new trick to build things smarter!'}
   />
 
+  <!-- Features2 Widget ************** -->
+
   <Features2
-    title="Was ich dabei lernen konnte"
-    subtitle="Auf dem Weg durfte ich viele Technologien und Techniken kennenlernen"
-    highlight="Skills"
+    id="skills"
+    title="What I was able to learn along the way"
+    subtitle="Along the way, I had the chance to explore many technologies and techniques"
+    tagline="Skills"
     items={[
       {
-        title: 'Sveltekit',
-        description:
-          'Sveltekit ist ein Webapp-Framework, welches auf Svelte basiert und performante SSR Apps ermöglicht.',
+        title: 'SvelteKit',
+        description: 'SvelteKit is a web app framework based on Svelte, enabling high-performance SSR applications.',
         icon: 'vscode-icons:file-type-svelte',
       },
       {
         title: 'Next.js',
         description:
-          'Next.js ist ein React-Framework, das die Entwicklung von Server-seitig gerenderten Webanwendungen vereinfacht.',
+          'Next.js is a React framework that simplifies the development of server-side rendered web applications.',
         icon: 'vscode-icons:file-type-reactjs',
       },
       {
         title: 'Astro',
         description:
-          'Astro ist ein Web-Framework welches Webseiten mit Kombination aus statischem und dynamischem Rendering ermöglicht.',
+          'Astro is a web framework that enables a combination of static and dynamic rendering for websites.',
         icon: 'vscode-icons:file-type-astro',
       },
       {
         title: 'Spring Boot',
-        description:
-          'Spring Boot ist ein Open-Source-Framework für die schnelle Entwicklung von Webanwendungen auf Basis von Java.',
+        description: 'Spring Boot is an open-source framework for rapidly developing web applications based on Java.',
         icon: 'logos:spring-icon',
       },
       {
         title: 'Flutter',
-        description:
-          'Flutter ist ein Framework für die plattformübergreifende mobile App-Entwicklung, das auf Dart basiert.',
+        description: 'Flutter is a cross-platform mobile app development framework based on Dart.',
         icon: 'vscode-icons:file-type-flutter',
       },
       {
         title: 'PHP',
-        description: 'PHP ist eine serverseitige Skriptsprache, die speziell für die Webentwicklung entwickelt wurde.',
+        description: 'PHP is a server-side scripting language specifically designed for web development.',
         icon: 'logos:php',
       },
       {
         title: 'Docker & Docker Compose',
-        description:
-          'Docker ist eine Container-Plattform für die Entwicklung, Bereitstellung und Ausführung von Anwendungen.',
+        description: 'Docker is a container platform for developing, deploying, and running applications.',
         icon: 'logos:docker-icon',
       },
       {
         title: 'Linux',
-        description:
-          'Linux ist ein quelloperatives Betriebssystem, das auf Unix aufbaut und häufig in Server-Systemen eingesetzt wird.',
+        description: 'Linux is an open-source operating system based on Unix, widely used in server environments.',
         icon: 'logos:linux-tux',
       },
       {
         title: 'Vim',
-        description:
-          'Durch Vim motions konnte ich meinen Workflow deutlich verbessern und bin nun schneller und effizienter.',
+        description: 'Using Vim motions has significantly improved my workflow, making me faster and more efficient.',
         icon: 'logos:vim',
       },
+    ]}>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <!-- <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /> -->
 
-  <!-- FAQs Widget ******************* -->
-
-  <AboutMe
-    title="Wer ist Benjamin Mehl?"
-    subtitle="Um mich als Person besser kennenzulernen, habe ich einen kleinen Artikel über mich geschrieben"
-    highlight="Über mich"
-    article1="Schon seitdem ich klein bin, hatte ich die Motivation, etwas Neues zu erschaffen. Zuerst fing dies an mit Video- und Fotobearbeitung. Jedoch war ich immer neidisch über die Möglichkeiten, die man hatte beim Entwickeln von digitalen Apps."
-    article2="Dadurch versuchte ich mich am Entwickeln von Webseiten und mobilen Apps, wobei ich viel Freude empfand. In meiner Freizeit gehe ich am liebsten Klippen springen oder bastel an kleinen Programmierprojekten."
-    image={{ src: import('~/assets/images/freibad.png'), alt: 'Freibad Jumping' }}
-  />
+  <!-- <Steps
+    title="Get your dream website up and running in no time with AstroWind."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Download</span>',
+        description:
+          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Add content</span>',
+        description:
+          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        description:
+          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  /> -->
 </Layout>

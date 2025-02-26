@@ -1,5 +1,4 @@
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, CameraControls } from '@react-three/drei';
 import Keyboard from './Keyboard';
 
 export default function ThreeKeyboard() {
