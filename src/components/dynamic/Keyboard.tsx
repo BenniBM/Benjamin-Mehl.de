@@ -3,12 +3,11 @@ import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export default function Model(props) {
-  const group = useRef();
   const { nodes, materials } = useGLTF(
     'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/mechanical-keyboard-tenkeyless/model.gltf'
   );
 
-  const groupRef = useRef();
+  const groupRef = useRef(null);
 
   // Define variables for animation parameters
   const amplitude = 0.1;
