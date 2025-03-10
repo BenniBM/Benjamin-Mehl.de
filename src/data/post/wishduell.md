@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-01-17T00:00:00Z
-title: Wishduell - Eine Mehrspieler Quiz App
-excerpt: Dieses Projekt erstellte ich im Rahmen meines Studiums. Es ist eine Mehrspieler Quiz App, die mit Socket.io realisiert wurde.
+title: Wishduell - A Multiplayer Quiz App
+excerpt: I created this project as part of my studies. It's a multiplayer quiz app implemented using Socket.io.
 image: ~/assets/images/wishduelll.png
 category: Web App
 tags:
@@ -12,28 +12,28 @@ tags:
   - Docker
 ---
 
-## Was sollte das Projekt erreichen?
+## What was the project's goal?
 
-Das Projekt sollte uns die Arbeit in einem großen Team (6 Leute) näher bringen. Dadurch auch komplexere Git-Workflows anzuwenden und zu erlernen, wie man ein Projekt von Anfang an strukturiert. Zudem sollte das Projekt eine echte Anwendung sein, die auch von anderen Menschen genutzt werden kann.
+The project aimed to give us experience working in a large team (6 people). This included applying more complex Git workflows and learning how to structure a project from the ground up. Additionally, the project was meant to be a real application that could be used by other people.
 
-## Welche Technologien wurden verwendet
+## Which technologies were used?
 
-| Technologie | Verwendung             |
+| Technology  | Usage                  |
 | ----------- | ---------------------- |
 | Traefik     | Reverse Proxy          |
 | Sveltekit   | Frontend Framework     |
 | Spring Boot | Backend Framework      |
-| Socket.io   | Realtime Kommunikation |
-| PostgreSQL  | Datenbank              |
-| Docker      | Containerisierung      |
+| Socket.io   | Realtime Communication |
+| PostgreSQL  | Database               |
+| Docker      | Containerization       |
 
-## Was war mein Aufgabenbereich
+## What were my responsibilities?
 
-- REST Backend mit Spring Boot
-- Socket Events erstellen und handlen mit Socket.io
-- Docker Compose für die Containerisierung
-- Erstellen von CI/CD Pipelines mit Gitlab Runners
+- REST Backend with Spring Boot
+- Creating and handling Socket Events with Socket.io
+- Docker Compose for containerization
+- Creating CI/CD pipelines with Gitlab Runners
 
-## Was ich dabei lernen durfte
+## What I learned
 
-Durch die Zusammenarbeit in einem relativ großen Team durfte ich lernen wie wichtig es ist einen strukturierten Workflow zu haben, wie zum Beispiel Issues zu erstellen. Zudem hat es sehr geholfen Docker und Docker Compose zu erlernen, um die Initialisierung der Entwicklungsumgebung bei jedem Mitglied des Projektes kinderleicht zu gestalten. Außerdem hab ich viele neue Technologien kennenlernen dürfen, wie websockets und reverse proxys.
+Through collaboration in a relatively large team, I learned the importance of having a structured workflow, such as creating issues. Learning Docker and Docker Compose was also very helpful in making the initialization of the development environment easy for every team member. Additionally, I got to learn many new technologies, such as websockets and reverse proxies.

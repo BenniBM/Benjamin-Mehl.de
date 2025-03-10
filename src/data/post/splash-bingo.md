@@ -1,8 +1,8 @@
 ---
 publishDate: 2022-05-12T00:00:00Z
-title: Splash Bingo - Eine App für Turm und Freestyle Springer
-description: Eine App für Turm und Freestyle Springer
-excerpt: Ein kleines Nebenprojekt um Flutter und Dart zu lernen.
+title: Splash Bingo - An App for Platform and Freestyle Divers
+description: An App for Platform and Freestyle Divers
+excerpt: A small side project to learn Flutter and Dart.
 image: ~/assets/images/splashbingo.png
 category: Mobile App
 tags:
@@ -11,8 +11,6 @@ tags:
   - figma
 ---
 
-## Was ist Splash Bingo?
+## What is Splash Bingo?
 
-Splash Bingo ist ein Spiel, indem man gegeneinander antreten kann, um zu sehen, wer die meisten vorgegeben Sprünge springen kann. Dabei wird der Sprung durch 4 Parameter bestimmt (Höhe, Schrauben, Saltos, Spezial). Durch das Aufdecken der Felder wird der Parameter (z. B. Höhe) definiert. Um mehr Punkte zu bekommen, deckt man mehr dieser Felder auf. Dadurch wird der Sprung jedoch anspruchsvoller. Die Punkte bekommt man erst, wenn man den Sprung erfolgreich springt.
-
-<!-- ## Design in Figma pipapo -->
+Splash Bingo is a game where players compete against each other to see who can perform the most predetermined dives. Each dive is defined by 4 parameters (height, twists, somersaults, special). By revealing the fields, the parameter (e.g. height) is defined. To get more points, players reveal more of these fields. However, this makes the dive more challenging. Points are only awarded when the dive is successfully completed.
