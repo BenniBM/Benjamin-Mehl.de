@@ -1,6 +1,6 @@
 ---
 publishDate: 2021-03-17T00:00:00Z
-title: Reitbuch - The Online Booking System for Equestrian Businesses
+title: Reitbuch - The Online Booking System for Horse Ranches
 excerpt: The part-time job that led me into web application development.
 image: ~/assets/images/rbook.png
 category: Web App
